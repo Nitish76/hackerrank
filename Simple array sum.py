@@ -3,9 +3,7 @@
 import os
 import sys
 
-#
 # Function to compute sum of elements of an array
-#
 def simpleArraySum(ar):
     total = 0 
     for i in range(ar_count):
