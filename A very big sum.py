@@ -3,16 +3,19 @@
 import os
 import sys
 
-#
-# Complete the aVeryBigSum function below.
-#
+
+# A function to find the sume of elements of an array.
+# The elements are integers that are possibly very large
+# For languages like C++ this function would require the use of long int
+
 def aVeryBigSum(n, ar):
     total = 0
     for i in range(n):
         total += ar[i]
     print(total)
     return(total)
-    #
+    
+# Input and output statements
 
 if __name__ == '__main__':
     f = open(os.environ['OUTPUT_PATH'], 'w')
