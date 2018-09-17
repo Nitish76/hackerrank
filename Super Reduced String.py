@@ -5,8 +5,12 @@ import os
 import random
 import re
 import sys
+''' This program reduces a given string(s) to its shortest length by doing a series of operations. 
+    In each operation a pair of adjacent lowercase letters that match are deleted. 
+    This operation is repeated until there none of the adjacent letters are matching or the string becomes empty.'''
+#   1<= s <= 100
 
-# Complete the super_reduced_string function below.
+# This function returns the super reduced string or 'Empty String' if the string is empty
 def super_reduced_string(s):
     l = list(s)
     d = False; i = 0
@@ -29,7 +33,7 @@ def super_reduced_string(s):
             return('Empty String')
             
         
-
+# Input and Output statements
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
